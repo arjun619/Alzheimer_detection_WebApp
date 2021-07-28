@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+body {
+    background: #eee
+}
+
+.item .item-content {
+    padding: 30px 35px
+}
+
+.image-upload {
+    width: 100%;
+    height: 300px;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    background: #f8f8f9;
+    color: #666;
+    overflow: hidden
+}
+
+.item-wrapper form img {
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.image-upload img {
+    height: 100% !important;
+    width: auto !important;
+    border-radius: 0px;
+    margin: 0 auto
+}
+
+.image-upload i {
+    font-size: 6em;
+    color: #ccc
+}
+
+.image-upload input {
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.item-wrapper input {
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px
+}
+</style>
+
+  </head>
+  <body>
+<div class="item-wrapper one">
+    <div class="item">
+        <form data-validation="true" action="/detector" method="post" enctype="multipart/form-data">
+            <div class="item-inner">
+                <div class="item-content">
+                    <div class="image-upload"> <label style="cursor: pointer;" for="file_upload"> <img src="" alt="" class="uploaded-image">
+                            <div class="h-100">
+                                <div class="dplay-tbl">
+                                    <div class="dplay-tbl-cell"> <i class="fa fa-cloud-upload"></i>
+                                        <h5><b>Choose Your Image to Upload</b></h5>
+                                        <h6 class="mt-10 mb-70">Or Drop Your Image Here</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--upload-content--> <input data-required="image" type="file" name="fileToUpload" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+				
+                        </label> </div>
+<input type="submit" class="btn btn-primary">
+                </div>
+                <!--item-content-->
+            </div>
+            <!--item-inner-->
+
+        </form>
+    </div>
+    <!--item-->
+</div>
+  </body>
+
+</html>
