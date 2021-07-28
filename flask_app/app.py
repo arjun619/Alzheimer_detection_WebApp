@@ -50,9 +50,9 @@ def result():
             max_val=res[i]
             max_indx=i
     if max_indx==2:
-        return render_template("positive.html")
-    else:
         return render_template("negative.html")
+    else:
+        return render_template("positive.html")
     
     return "hehe"
 
